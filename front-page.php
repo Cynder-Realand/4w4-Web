@@ -30,6 +30,9 @@
     </ul>
 </section>
 
+<?php wp_nav_menu(array("menu"=>"menu_accueil",
+                            "container"=>"nav")); ?>
+
     <section class="site__main__firstPost">
    <?php if (have_posts()): the_post(); ?>
         <h2><?php the_title() ?></h2>

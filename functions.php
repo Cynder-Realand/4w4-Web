@@ -19,11 +19,25 @@ function cidw_4w4_register_nav_menu(){
         'menu_footer'  => __( 'Menu footer', 'cidw_4w4' ),
         'footer_colonne' => __('Menu footer colonne', 'cidw_4w4'),
         'menu_categorie_cours' => __( 'Menu catégorie_cours', 'cidw_4w4'),
+        'menu_accueil' => __( 'Menu  accueil', 'cidw_4w4' ),
     ) );
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
 
-/* ---------------------------------------------------------------------- filtré les choix du menu principal */
+/* ---------------------------------------------------- afficher une description de choix de menu */
+/* Cette nouvelle version permet de ne pas avoir de warning */
+function prefix_nav_description( $item_output, $item) {
+    if ( !empty( $item->description ) ) {
+        $item_output = str_replace( '</a>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu-item-icone"></div></a>',
+              $item_output );
+    }
+    return $item_output;
+}
+add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
+
+
+/* ---------------------------------------------------------------------------------------------- filtré les choix du menu principal */
 function cidw_4w4_filtre_choix_menu($obj_menu){
     //var_dump($obj_menu);
     foreach($obj_menu as $cle => $value)

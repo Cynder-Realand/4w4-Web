@@ -1,0 +1,59 @@
+.menu-accueil-container { // nav
+
+    .menu { // ul
+
+        display : flex;
+        justify-content: space-around;
+        align-items: center;
+        .accueil__cours .menu-item-icone{//li
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=file-badge-bold');
+        }
+        // .accueil__prof .menu-item-icone{ // li
+        // }
+        // .accueil__aide .menu-item-icone{ //li
+        // }
+
+        // .accueil__etudiant .menu-item-icone{ //li
+
+        // }
+
+
+        .menu-item { // li
+            display : flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color__bouton__background;
+            //width: 20%;
+            flex : 0 0 20%;
+            height : 175px;
+
+            a{
+                display : flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: clamp(1rem, 2vw, 2.2rem);
+                color: $color__bouton__color;
+                height : 100%;
+                .menu-item-description { // span
+                    font-size: clamp(.8rem, 1.5vw, 1rem);
+
+                }
+                .menu-item-icone{
+                    border : 1px solid #aaa;
+                    width : 2rem;
+                    height : 2rem;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    margin-top : auto;
+                }
+
+
+            }
+        }
+
+
+    }
+
+} 
