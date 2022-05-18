@@ -22,6 +22,8 @@ theme name: Sukuna Purple BG
 .site__main{
     grid-area: main;
     background-color: rgba($color__background-main, .55);
+    display : flex;
+    flex-direction: column;
 }
 
 .site__footer{

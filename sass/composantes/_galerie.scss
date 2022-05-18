@@ -1,0 +1,9 @@
+.galerie {
+    display : flex;
+    justify-content: center;
+    width : 95%;
+    @media screen and (min-width: $largeur__media--mobil) {
+         width :80%;
+    }
+
+}
