@@ -13,7 +13,7 @@
     <?php wp_head() ?>
     <?php show_admin_bar(true); ?>
 </head>
-<body  <?php body_class("site"); ?>>
+<body  <?php body_class("site"); ?> style="background-color:<?= get_theme_mod("background_body"); ?>;" >
     <header class="site__header__titre">
         <?= get_custom_logo() ?>
         <h1 class="header__titre">
