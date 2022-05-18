@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: lab9-Kyndra-Dess
+theme name: lab10-Kyndra-Dess
 Author: Kyndra Dess
 Author URI: https://github.com/Cynder-Realand/4w4
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse:https://github.com/Cynder-Realand/4w4
@@ -852,10 +852,6 @@ Navigation catégorie cours
 
 .boite__modale, .boite__carrousel {
   position: fixed;
-  top: 25%;
-  left: 25%;
-  width: 50%;
-  height: 50%;
   border: 5px solid #aaa;
   background-color: #3c444b;
   transform: scale(0);
@@ -875,6 +871,13 @@ Navigation catégorie cours
   transform: scale(1);
 }
 
+.boite__modale {
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+}
+
 .boite__carrousel {
   top: 12.5%;
   left: 12.5%;
@@ -882,13 +885,38 @@ Navigation catégorie cours
   height: 75%;
 }
 
-.boite__carrousel img {
+@media screen and (min-width: 800px) {
+  .boite__carrousel {
+    top: 2.5%;
+    left: 2.5%;
+    width: 95%;
+    height: 95%;
+  }
+}
+
+.boite__carrousel__img {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.boite__carrousel__img img {
   position: absolute;
   top: 0;
   left: 0;
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.boite__carrousel__img img.img--ouvrir {
+  transform: translateX(0);
 }
 
 .boite__carrousel__navigation {
@@ -900,15 +928,31 @@ Navigation catégorie cours
   z-index: 1;
 }
 
-.boite__carrousel__navigation button {
+.boite__carrousel__navigation .bouton {
   width: 20px;
   height: 20px;
   margin: 20px 10px;
   border-radius: 100%;
 }
 
-.boite__carrousel__navigation button:focus {
+.boite__carrousel__navigation .bouton:focus {
   background-color: black;
+}
+
+.galerie {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+@media screen and (min-width: 800px) {
+  .galerie {
+    width: 95%;
+  }
+}
+
+.home .site__main {
+  align-items: center;
 }
 
 /* ---------------------------------------------------------
