@@ -7,6 +7,12 @@
     &__input{
         background-color: transparent;
         width: 100%;
+        transition : background-color .25s;
+        border : none;
+        outline: none;
+        &:focus {
+           background-color: rgba(#000, .2); 
+        }
     }
 
     &__button{

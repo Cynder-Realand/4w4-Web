@@ -1,20 +1,34 @@
 .site__header {
     display: flex;
+    flex-direction: column;
     background-color: $color__background-header;
     color: $color__font-header;
-    padding-left: 11px;
+    // padding: 10px 20px 10px 40px;
 
-  
-
-    .header__titre {
-      font-size: 4em;
-      font-family: $font__titre;
+    @media screen and (min-width: 700px){
+      flex-direction: row;
+      align-items: center;
+    }
+    &__titre {
+      display : flex;
+      //font-size: 4em;
+      // font-family: $font__titre;
+      align-items: center;
 
     }
-    .header__description {
-      font-size: 1.5rem;
-      font-family: $font__main;
 
+    .header__titre a {
+      font-size: clamp(2rem, 4vw, 8rem);
+      font-family: $font__titre;
+      padding-left : 10px;
+    }
+
+    .header__description {
+      //font-size: 1.5rem;
+      font-size: clamp(1rem, 2vw, 2rem);
+      font-family: $font__main;
+      color : $color__font-header;
+      padding-left : 10px;
      
     }
   }
@@ -22,7 +36,10 @@
   .util{
     display: flex;
     flex-direction: column;
-    margin-left: auto;
+    align-items: center;
+    @media screen and (min-width : 700px){
+      margin-left : auto;
+    }
 
       &__liens{
         display: flex;

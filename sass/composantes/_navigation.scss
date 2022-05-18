@@ -2,10 +2,17 @@
     position : absolute;
     transition : transform .3s;
     transform : rotate(0);
+    z-index : 99;
+    left : 10px;
+    top : 10px;
 }
 
 #chk-burger{
-    display:none;
+    //display:none;
+    list-style-type: none;
+    margin : 0;
+    padding :0;
+    padding-top : 40px;
 }
 
 #chk-burger:checked ~ #burger {
@@ -25,6 +32,7 @@
     //list-style-image: url('/wp-content/themes/Exercise-2-Kyndra-Dess/images/Sukunas_Face_Marks.png');
     margin : 0;
     padding :0;
+    
 }
 .menu-item{
     margin:0;
@@ -41,10 +49,10 @@
 }
 
 @media screen and (min-width : $largeur__media--tablette){
-    #burger {
+    .site #burger {
         display : none;
     }
-    .menu-principal-container {
+    .site .menu-principal-container {
         display : block;
     }
 

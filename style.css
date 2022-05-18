@@ -515,25 +515,46 @@ COMPOSANTES
 
 .site__header {
   display: flex;
+  flex-direction: column;
   background-color: #7163C2;
   color: #FFF8D9;
-  padding-left: 11px;
 }
 
-.site__header .header__titre {
-  font-size: 4em;
+@media screen and (min-width: 700px) {
+  .site__header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.site__header__titre {
+  display: flex;
+  align-items: center;
+}
+
+.site__header .header__titre a {
+  font-size: clamp(2rem, 4vw, 8rem);
   font-family: "Italianno";
+  padding-left: 10px;
 }
 
 .site__header .header__description {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2vw, 2rem);
   font-family: "Times New Roman", Times, serif;
+  color: #FFF8D9;
+  padding-left: 10px;
 }
 
 .util {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .util {
+    margin-left: auto;
+  }
 }
 
 .util__liens {
@@ -549,10 +570,16 @@ COMPOSANTES
   position: absolute;
   transition: transform .3s;
   transform: rotate(0);
+  z-index: 99;
+  left: 10px;
+  top: 10px;
 }
 
 #chk-burger {
-  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
 }
 
 #chk-burger:checked ~ #burger {
@@ -590,10 +617,10 @@ COMPOSANTES
 }
 
 @media screen and (min-width: 800px) {
-  #burger {
+  .site #burger {
     display: none;
   }
-  .menu-principal-container {
+  .site .menu-principal-container {
     display: block;
   }
 }
@@ -713,6 +740,13 @@ COMPOSANTES
 .recherche__input {
   background-color: transparent;
   width: 100%;
+  transition: background-color .25s;
+  border: none;
+  outline: none;
+}
+
+.recherche__input:focus {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .recherche__button {
@@ -843,7 +877,6 @@ theme name: Sukuna Purple BG
 
 .site {
   display: grid;
-  gap: 10px;
   grid-template-columns: auto;
   grid-template-areas: "sidebar" "header" "main" "footer";
 }
