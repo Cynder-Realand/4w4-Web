@@ -48,6 +48,17 @@ theme name: Sukuna Purple BG
             "sidebar main"
             "footer footer";
     }
+
+    .home {
+        display: grid;
+        //gap : 10px;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "sidebar"
+            "header"
+            "main"
+            "footer";
+    }
 }
 
 

@@ -4,7 +4,7 @@
     transform : rotate(0);
     z-index : 99;
     left : 10px;
-    top : 10px;
+    top : 30px;
 }
 
 #chk-burger{
@@ -26,7 +26,7 @@
 }
 
 
-.menu-principal-container{}
+//.menu-principal-container{}
 .menu{
     list-style-type: none;
     //list-style-image: url('/wp-content/themes/Exercise-2-Kyndra-Dess/images/Sukunas_Face_Marks.png');
@@ -54,6 +54,15 @@
     }
     .site .menu-principal-container {
         display : block;
+    }
+
+    /* ----------------------------------------- */
+
+    .home #burger {
+        display : block;
+    }
+    .home .menu-principal-container {
+        display : none;
     }
 
 }
