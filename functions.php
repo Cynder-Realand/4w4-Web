@@ -1,5 +1,7 @@
 <?php 
 
+require_once("options/apparence.php");
+
 function cidw_4w4_enqueue(){
     //wp_enqueue_style('style_css', get_stylesheet_uri());
 
