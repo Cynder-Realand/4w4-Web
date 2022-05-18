@@ -6,9 +6,9 @@
                  <article class="formation__cours <?php echo $categories[1]->slug; ?>">
                         <?php
                         $titre = get_the_title();
-                        $titreFiltreCours = substr($titre, 7, -6);
+                        $titreFiltreCours = substr($titre, 3, -6);
                         $nbHeures = substr($titre, -6);
-                        $sigleCours = substr($titre, 0, 7);
+                        $sigleCours = substr($titre, 0, 4);
                         $descCours = get_the_excerpt();
                         ?>
                         <?php the_post_thumbnail("medium"); ?>
