@@ -8,8 +8,9 @@
                         $titre = get_the_title();
                         $titreFiltreCours = substr($titre, 3, -6);
                         $nbHeures = substr($titre, -6);
+                        $departement = get_field( "departement" );
                         $sigleCours = substr($titre, 0, 4);
-                        $descCours = get_the_excerpt();
+                        $descCours = wp_trim_words(get_the_content(),15,"<a href='#'> La suite </a>");
                         ?>
                         <?php the_post_thumbnail("medium"); ?>
                         
@@ -20,4 +21,5 @@
                         <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
                         <p class="cours__sigle"><?= $sigleCours; ?> </p>
                         <p class="cours__desc"> <?= $descCours; ?></p>
+                        <p class="cours__departement"><?= $departement; ?></p>
                     </article>
