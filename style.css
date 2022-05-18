@@ -855,6 +855,22 @@ Navigation catégorie cours
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, #F7C6CE), color-stop(0.72, #E7A5BD), color-stop(0.86, #4B1A48));
 }
 
+.boite__modale {
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  border: 5px solid #aaa;
+  background-color: #f00;
+  width: 50vw;
+  height: 50vh;
+  transform: scale(0.1);
+  transition: all 1s ease-in-out;
+}
+
+.boite__modale:hover {
+  transform: scale(1);
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -927,6 +943,7 @@ theme name: Sukuna Purple BG
 .site {
   background-color: #0B2057;
   font-family: "Times New Roman", Times, serif;
+  position: relative;
 }
 
 .site__header {

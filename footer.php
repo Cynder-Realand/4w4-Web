@@ -46,6 +46,14 @@ wp_nav_menu(array(
                     "link_before"=>$icone)); ?>
     <div class="footer__recherche"><?php get_search_form(); ?></div>
 </footer>
+
+<div class="boite__modale">
+    <button class="boite__modale__fermeture">X</button>
+    <p class="boite__modale_texte">
+        Ceci est un premier test de boîte modale
+    </p>
+</div>
+
 <?php wp_footer(); ?>
 </body>
 
