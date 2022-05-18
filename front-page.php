@@ -30,7 +30,16 @@
     </ul>
 </section>
 
-<?php wp_nav_menu(array("menu"=>"menu_accueil",
+<h1>Les études en TIM</h1>
+
+    <?php 
+    /* --------------------------------------------- menu accueil */
+    wp_nav_menu(array("menu"=>"accueil",
+                            "container"=>"nav")); ?>
+
+   <?php 
+   /* --------------------------------------------- menu evenement */
+   wp_nav_menu(array("menu"=>"evenement",
                             "container"=>"nav")); ?>
 
     <section class="site__main__firstPost">

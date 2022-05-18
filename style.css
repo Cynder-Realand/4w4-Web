@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: lab5-Kyndra-Dess
+theme name: exercice3-Kyndra-Dess
 Author: Kyndra Dess
 Author URI: https://github.com/Cynder-Realand/4w4
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse:https://github.com/Cynder-Realand/4w4
@@ -689,6 +689,14 @@ Navigation catégorie cours
 
 .menu-categorie_cours-container .menu .menu-item:hover a {
   color: #7B02CB 3px -3px 10px;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item {
+  background-color: #7163C2;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item a {
+  color: #000 3px -3px 5px;
 }
 
 .site__footer {
