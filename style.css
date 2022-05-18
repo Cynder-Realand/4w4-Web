@@ -850,6 +850,10 @@ Navigation catégorie cours
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, #F7C6CE), color-stop(0.72, #E7A5BD), color-stop(0.86, #4B1A48));
 }
 
+/**
+* les deux boîtes modales   sont contrôlés en javascript par 
+* boite-modele.js et carrousel.js
+*/
 .boite__modale, .boite__carrousel {
   position: fixed;
   border: 5px solid #aaa;
@@ -871,6 +875,7 @@ Navigation catégorie cours
   transform: scale(1);
 }
 
+/* Spécifiquement les dimensions de la boite__modale */
 .boite__modale {
   top: 25%;
   left: 25%;
@@ -878,6 +883,7 @@ Navigation catégorie cours
   height: 50%;
 }
 
+/* la boite__carrousel */
 .boite__carrousel {
   top: 12.5%;
   left: 12.5%;
@@ -911,12 +917,12 @@ Navigation catégorie cours
   object-fit: cover;
   width: 100%;
   height: 100%;
-  transform: translateX(-100%);
+  opacity: 0;
   transition: all 1s;
 }
 
 .boite__carrousel__img img.img--ouvrir {
-  transform: translateX(0);
+  opacity: 1;
 }
 
 .boite__carrousel__navigation {
@@ -939,6 +945,7 @@ Navigation catégorie cours
   background-color: black;
 }
 
+/* fin .boite__carrousel */
 .galerie {
   display: flex;
   justify-content: center;
