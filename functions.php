@@ -8,6 +8,12 @@ function cidw_4w4_enqueue(){
     array(), 
     filemtime(get_template_directory() . '/style.css'), 
     false);
+
+    wp_enqueue_script('cidw-4w4-boite-modale',
+                        get_template_directory_uri() . '/javascript/boite-modale.js',
+                        array(), filemtime(get_template_directory() . '/javascript/boite-modale.js'),
+                        true); // true pour intégrer le js en bas du document
+
 }
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");

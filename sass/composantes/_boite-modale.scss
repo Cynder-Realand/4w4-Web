@@ -1,18 +1,18 @@
 .boite__modale {
-    position : absolute;
+    position : fixed;
     top: 25vh;
     left: 25vw;
     border : 5px solid #aaa;
     background-color:  #f00;
     width : 50vw;
     height : 50vh;
-    transform : scale(.1);
+    transform : scale(0);
     transition : all 1s ease-in-out;
     &__fermeture {}
     &__texte{}
-
-    &:hover{
-        transform : scale(1);
-    }
-
 } 
+
+.ouvrir
+{
+    transform : scale(1);
+}
