@@ -1,0 +1,89 @@
+.site__main {
+    font-family: $font__titre;
+    font-size: 35px;
+    color: $color__font-main-title;
+    padding: 10px 15px;
+    background-color:$color__background-main;
+    border-radius: 5px;
+    box-shadow: $color__box-shadow-main;
+
+    &__firstPost{
+        h2{
+            color: $color__font-main-singlePost;
+            font-family: $font__titre;
+            font-size: 45px;
+            text-shadow: $color__text-shadow-title;
+        }
+        p{
+            font-family: $font__main;
+            color: $color__font-main-contenu;
+            font-size: 20px;
+            text-shadow: $color__text-shadow-p;
+        }
+    }
+}
+
+.article{
+    color: $color__font-main-singlePost;
+    font-family: $font__titre;
+    font-size: 45px;
+    text-shadow: $color__text-shadow-title;
+    &__contenu{
+        font-family: $font__main;
+        color: $color__font-main-contenu;
+        font-size: 20px;
+        text-shadow: $color__text-shadow-p;
+    }
+}
+
+.principal h1{
+    color: $color__font-main-h1;
+}
+
+.formation {
+    display: flex;
+    flex-direction: column;
+
+    &__titre {
+        font-size: 3.5rem;
+        color: $color__font-main;
+        margin: 10px 0px;
+        font-family: $font__titre;
+    }
+    &__liste {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    &__cours {
+        background-color: $color__background-cours;
+        box-shadow: $color__box-shadow-cours;
+        border-radius: 5px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        @media screen and (min-width : $largeur__media--tablette){
+            width: 45%;
+        }
+        @media screen and (min-width : $largeur__media--desktop){
+            width: 30%;
+        }
+        padding: 10px;
+    }
+}
+.cours__titre {
+    font-size: 1.5rem;
+    color: $color__font-main;
+    margin: 5px 0px;
+}
+
+.cours__sigle {
+    font-size: 1.2rem;
+    color: $color__font-sigle;
+    margin: 0;
+}
+
+.cours__description {
+    font-size: 1rem;
+}

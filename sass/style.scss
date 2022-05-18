@@ -1,0 +1,47 @@
+/*
+theme name: Exercise-2-Kyndra-Dess
+Author: Kyndra Dess
+Author URI: https://github.com/Cynder-Realand/4w4
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse:https://github.com/Cynder-Realand/4w4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cidw-4w4
+
+*/
+/* ---------------------------------------------------------
+VARIABLES
+--------------------------------------------------------- */
+@import "variables/couleurs";
+@import "variables/typo";
+@import "variables/structure";
+
+/* ---------------------------------------------------------
+INITIALISATION
+--------------------------------------------------------- */
+@import "initialisation/normalize";
+@import "initialisation/box-sizing";
+
+/* ---------------------------------------------------------
+ÉLÉMENTS
+--------------------------------------------------------- */
+@import "elements/links";
+
+/* ---------------------------------------------------------
+COMPOSANTES
+--------------------------------------------------------- */
+@import "composantes/contenu";
+@import "composantes/header";
+@import "composantes/navigation";
+@import "composantes/footer";
+@import "composantes/404";
+@import "composantes/recherche";
+@import "composantes/scroll-bar";
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+@import "animation/entete";
+/* ---------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
+@import "layout/layout";

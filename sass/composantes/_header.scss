@@ -1,0 +1,38 @@
+.site__header {
+    display: flex;
+    background-color: $color__background-header;
+    color: $color__font-header;
+    padding-left: 10px;
+
+  
+
+    .header__titre {
+      font-size: 4em;
+      font-family: $font__titre;
+
+    }
+    .header__description {
+      font-size: 1.5rem;
+      font-family: $font__main;
+
+     
+    }
+  }
+
+  .util{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+
+      &__liens{
+        display: flex;
+        justify-content: space-between;
+        a{
+
+          svg{
+            color:#FF2C91;
+          }
+        }
+      }
+  }
+

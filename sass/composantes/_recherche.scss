@@ -1,0 +1,24 @@
+.recherche{
+        display: flex;
+        background-color: #FECEC0;
+        width: 300px;
+        position: relative;
+
+    &__input{
+        background-color: transparent;
+        width: 100%;
+    }
+
+    &__button{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+        svg{
+            color:#D96C94;
+        }
+    }
+}
