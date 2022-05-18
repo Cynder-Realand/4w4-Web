@@ -17,7 +17,7 @@
 
     }
 
-    .header__titre a {
+    .header__titre a { // titre principal du site
       font-size: clamp(2rem, 4vw, 8rem);
       font-family: $font__titre;
       padding-left : 10px;
