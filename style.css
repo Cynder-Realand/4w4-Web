@@ -506,6 +506,9 @@ COMPOSANTES
 }
 
 .formation__cours {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  color: #0B2057;
   background-color: #FCC5FE;
   box-shadow: #7B02CB 3px -3px 10px;
   background-position: 97% 3%;

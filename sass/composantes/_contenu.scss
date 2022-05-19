@@ -85,6 +85,9 @@
     }
     
     &__cours {
+        font-family: $font__main;
+        font-size: 1rem;
+        color: $color__background-body;
         background-color: $color__background-cours;
         box-shadow: $color__box-shadow-cours;
         background-position: 97% 3%;
