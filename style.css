@@ -610,6 +610,7 @@ COMPOSANTES
 }
 
 #chk-burger {
+  display: none;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -1033,6 +1034,7 @@ ANIMATION
   background-color: transparent;
   border-radius: 25%;
   overflow: hidden;
+  transform: translateY(325%);
   /*
     &:hover{
         .burger__ligne:nth-of-type(1){
